@@ -59,7 +59,10 @@ for (let i = 0; i < totalPortfolioItem; i++) {
     portfolioItems[i].addEventListener('click', function(){
         itemIndex = i;
         changeItem();
-        toggleLightbox();
+        /* `toggleLightbox();` is a function that toggles the visibility of the lightbox element on the
+        webpage. When this function is called, it will toggle the class 'open' on the lightbox
+        element, which controls whether the lightbox is displayed or hidden on the page. */
+        // toggleLightbox(); // uncommenting this line will restart image popup on screen functionality whenever clicked on portfolio card/items
     });
 }
 

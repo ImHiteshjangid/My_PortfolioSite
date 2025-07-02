@@ -1037,7 +1037,7 @@ select {
   border: 6px solid #fdf9ff;
   border-radius: 10px;
   overflow: hidden;
-  cursor: pointer;
+  cursor: default;
   position: relative;
 }
 
@@ -1066,7 +1066,7 @@ select {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.800);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -1079,12 +1079,14 @@ select {
 }
 
 .portfolio-img:hover .portfolio-overlay {
-  opacity: 1;
+  opacity: 5;
 }
 
 .portfolio-overlay h4 {
   font-size: 20px;
   margin-bottom: 5px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .portfolio-overlay span {
@@ -1104,7 +1106,7 @@ select {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.863);
   height: 100%;
   width: 100%;
   z-index: 1;
@@ -1153,6 +1155,52 @@ select {
 
 .portfolio .portfolio-item .portfolio-info .icon .fa {
   line-height: 40px;
+}
+
+/* Separate the buttons from skill tags above */
+.portfolio-buttons {
+  margin-top: 2em;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Base button styling */
+.btn-portfolio {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #24292e, #4e4e4e);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.4s;
+  backdrop-filter: blur(6px);
+}
+
+/* Icons in button */
+.btn-portfolio img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effects */
+.btn-portfolio:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  background: linear-gradient(135deg, #ff5722, #ff8a50);
+}
+
+/* Icon subtle rotation on hover */
+.btn-portfolio:hover img {
+  transform: rotate(15deg);
 }
 
 
@@ -1507,11 +1555,11 @@ select {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #ffffff;  /* Darker than before */
+  background-color: #d10000;  /* Darker than before */
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #222;
+  color: #ffffff;
   font-size: 22px;
   text-decoration: none;
   transition: all 0.3s ease;
