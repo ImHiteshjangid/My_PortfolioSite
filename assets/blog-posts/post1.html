@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How I Built My Portfolio Website</title>
+  <link rel="stylesheet" href="../../css/blog-posts.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="post-cover">
+    <img src="../../images/portfolio/excel_salary_dashboard.png" alt="Cover" class="post-cover-image" />
+    <div class="post-cover-text">
+      <h1>How I Built My Portfolio Website</h1>
+      <p class="post-meta">July 4, 2025 • 5 min read</p>
+    </div>
+  </header>
+
+  <main class="post-content">
+    <article>
+      <h2>📌 Introduction</h2>
+      <p>In this post, I'll walk you through my approach to designing and building my personal portfolio site—from planning to deployment.</p>
+
+      <h2>🎨 Design Process</h2>
+      <p>Starting with Figma, I designed a mobile-first layout with clean typography, a hero section, and smooth animations. Color selection focused on accessible contrast and modern gradients.</p>
+
+      <h2>⚙️ Tech Stack</h2>
+      <ul>
+        <li>HTML5 + CSS3</li>
+        <li>Vanilla JavaScript for interactions</li>
+        <li>React for components</li>
+        <li>Hosted on Vercel</li>
+      </ul>
+
+      <h2>💡 Code Snippet</h2>
+      <pre><code>const typewriter = new Typewriter('#title', {
+  loop: true,
+  delay: 75
+});
+
+typewriter
+  .typeString('Frontend Developer')
+  .pauseFor(2000)
+  .deleteAll()
+  .typeString('UX Enthusiast')
+  .start();
+</code></pre>
+
+      <h2>🧠 Challenges & Solutions</h2>
+      <p>Ensuring responsiveness was key. Using CSS Grid and Flexbox, I built layouts that adapt to all devices.</p>
+      <blockquote>
+        "Good design is as little design as possible." – Dieter Rams
+      </blockquote>
+
+      <h2>🚀 What's Next?</h2>
+      <p>I'm planning to add a CMS (like Notion or Markdown) to manage blog content more easily. Stay tuned for updates!</p>
+
+      <div class="back-link">
+        <a href="../../blog.html">← Back to Blog</a>
+      </div>
+
+      <div class="post-navigation">
+        <a href="post2.html">Next Post →</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
