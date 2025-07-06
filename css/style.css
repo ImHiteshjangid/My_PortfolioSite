@@ -849,18 +849,22 @@ select {
 }
 
 @media (max-width: 768px) {
-  .skill-card {
-    min-width: 80px;
-    height: 100px;
-  }
+    .about .about-content .personal-info .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .skill-card {
+        min-width: 80px;
+        height: 100px;
+    }
 
-  .skill-card i {
-    font-size: 34px;
-  }
+    .skill-card i {
+        font-size: 34px;
+    }
 
-  .skill-card span {
-    font-size: 13px;
-  }
+    .skill-card span {
+        font-size: 13px;
+    }
 }
 
 
