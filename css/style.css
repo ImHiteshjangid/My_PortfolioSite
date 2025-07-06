@@ -1646,24 +1646,25 @@ select {
     }
 }
 
-@media(max-width: 575px) {
-    .portfolio-overlay {
-        position: static;
-        opacity: 1;
-        background-color: white;
-        color: #333;
-        height: auto;
-        width: auto;
-        padding: 12px;
-        overflow: visible;
-    }
-    .portfolio-item {
-        position: static;
-    }
-    .portfolio .portfolio-item,
-    .contact .contact-info-item {
-        flex: 0 0 100%;
-        -ms-flex: 0 0 100%;
-        max-width: 100%;
-    }
+@media (max-width: 575px) {
+  .portfolio-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overlay {
+    position: static !important;
+    opacity: 1 !important;
+    background-color: transparent !important;
+    color: #333 !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 12px;
+    overflow: visible !important;
+  }
+
+  .portfolio-image {
+    width: 100%;
+    display: block;
+  }
 }
