@@ -849,10 +849,13 @@ select {
 }
 
 @media (max-width: 768px) {
+    
     .about .about-content .personal-info .info-item {
-    flex-direction: column;
-    align-items: flex-start;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
+
     .skill-card {
         min-width: 80px;
         height: 100px;
