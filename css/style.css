@@ -1010,6 +1010,8 @@ select {
   flex: 0 0 50.00%;
   max-width: 50.00%;
   margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio .portfolio-item.hide {
@@ -1645,15 +1647,18 @@ select {
 }
 
 @media(max-width: 575px) {
-
-    .portfolio-item .overlay {
+    .portfolio-overlay {
         position: static;
         opacity: 1;
-        background: transparent;
+        background-color: transparent;
         color: #333;
         height: auto;
         width: auto;
-        padding: 10px;
+        padding: 12px;
+        overflow: visible;
+    }
+    .portfolio-item {
+        position: static;
     }
     .portfolio .portfolio-item,
     .contact .contact-info-item {
