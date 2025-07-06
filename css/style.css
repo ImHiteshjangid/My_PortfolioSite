@@ -1650,7 +1650,7 @@ select {
     .portfolio-overlay {
         position: static;
         opacity: 1;
-        background-color: transparent;
+        background-color: white;
         color: #333;
         height: auto;
         width: auto;
