@@ -1666,6 +1666,10 @@ select {
         color: #333;
     }
 
+    .btn-portfolio span {
+        color: #fff;   /* or any color you want */
+    }
+
     .portfolio-item {
         position: static;
     }
