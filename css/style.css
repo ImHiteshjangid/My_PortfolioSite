@@ -1657,9 +1657,19 @@ select {
         padding: 12px;
         overflow: visible;
     }
+    .portfolio-overlay h4 {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .portfolio-overlay span {
+        color: #333;
+    }
+
     .portfolio-item {
         position: static;
     }
+
     .portfolio .portfolio-item,
     .contact .contact-info-item {
         flex: 0 0 100%;
