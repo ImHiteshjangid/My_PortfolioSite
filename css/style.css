@@ -1632,6 +1632,7 @@ select {
     .blog .blog-item,
     .about .about-content .skills,
     .about .about-content .education,
+    .about .about-content .certification,
     .about .about-content .experience {
         flex: 0 0 100%;
         -ms-flex: 0 0 100%;
